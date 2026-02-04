@@ -1,5 +1,4 @@
-
-﻿#Node Class — Notes & Examples
+﻿# Node Class — Notes & Examples
 
 This repo contains structured notes and runnable examples for UNIX, Git, Bash, and Node.js.
 
@@ -20,15 +19,14 @@ npm run examples
 3. Run tests:
 
 ```bash
-npm test
+npm Test
 ```
 
 Helper script:
 
 ```bash
 ./scripts/shell-utils.sh --list
-./scripts/shell-utils.sh --run fs-async
+./scripts/shell-utils.sh --run fs_func
 ```
 
-Contributions are welcome — add notes to `NOTES.md`, examples in `examples/` and tests in `tests/`.
-
+Contributions are welcome — add notes to `Notes.md`, examples in `examples/` and tests in `Test/`.
