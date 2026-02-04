@@ -204,4 +204,4 @@ Explanation:
 - Essential & advanced Linux commands
 - Git branching using terminal
 
-This file is **ready to upload directly to GitHub**.
+
