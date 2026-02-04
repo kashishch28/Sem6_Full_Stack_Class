@@ -55,7 +55,7 @@ man ls          # manual for ls command
 ---
 
 ## Week 2 – Bash scripting
-Variables, loops and conditionals with short examples and `scripts/shell-utils.sh` containing helper functions.
+Variables, loops and conditionals with short examples and `scripts/` containing helper functions.
 
 Example snippet:
 
