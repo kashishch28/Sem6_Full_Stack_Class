@@ -60,7 +60,7 @@ Variables, loops and conditionals with short examples and `scripts/shell-utils.s
 Example snippet:
 
 ```bash
-name="Abhay"
+name="Kashish"
 echo "Hello $name"
 
 for i in {1..5}; do
@@ -89,8 +89,8 @@ git merge feature         # merge branch
 ## Week 4 – Node.js Examples
 Runnable examples live in the `examples/` directory:
 - `examples/app.js` — minimal app
-- `examples/fs-sync.js` — synchronous file write
-- `examples/fs-async.js` — asynchronous file write
+- `examples/fs_func.js` — synchronous file write
+- `examples/fs_func.js` — asynchronous file write
 
 Each example writes small output files inside `examples/` when run.
 
@@ -112,14 +112,14 @@ npm run examples
 3. Run a single example:
 
 ```bash
-node examples/fs-async.js
+node examples/fs_func.js
 ```
 
 You can also run the helper script:
 
 ```bash
 ./scripts/shell-utils.sh --list
-./scripts/shell-utils.sh --run fs-async
+./scripts/shell-utils.sh --run fs_func
 ```
 
 ---
