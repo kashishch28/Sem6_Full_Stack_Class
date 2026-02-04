@@ -25,8 +25,6 @@ npm Test
 Helper script:
 
 ```bash
-./scripts/shell-utils.sh --list
-./scripts/shell-utils.sh --run fs_func
-```
+./script/
 
 Contributions are welcome — add notes to `Notes.md`, examples in `examples/` and tests in `Test/`.
