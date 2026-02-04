@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.11"
+  },
+  "name": "sem6_mern",
+  "version": "1.0.0",
+  "main": "git.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node n.js",
+    "ayu": "echo \"Hello World\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
