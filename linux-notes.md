@@ -1,46 +1,43 @@
-# 🐧 Linux / Unix Fundamentals
+# UNIX — Structured Linux Notes
 
-## 📌 Overview
-These notes cover core Linux and Unix fundamentals including philosophy, filesystem, terminal usage, essential commands, and basic Git usage from the terminal.
+## Table of Contents
+- [Overview](#overview)
+- [Week 1 — UNIX Basics](#week-1--unix-basics)
+- [Filesystem & Paths](#filesystem--paths)
+- [Basic Commands](#basic-commands)
+- [Advanced Commands](#advanced-commands)
+- [Git from Terminal](#git-from-terminal)
+- [Summary](#summary)
 
 ---
 
-## 1. Unix Philosophy
-Unix follows a simple and powerful design philosophy:
-- Programs should do **one thing well**
+## Overview
+This document contains **clean, beginner-friendly Linux/UNIX notes** written for direct use in a GitHub repository.  
+All examples are runnable from the terminal.
+
+---
+
+## Week 1 — UNIX Basics
+
+### Core Concepts
+- **Kernel**: Core of the operating system (CPU, memory, hardware)
+- **Shell**: Interface between user and kernel (executes commands)
+- **CLI**: Command Line Interface (terminal-based)
+- **GUI**: Graphical User Interface (mouse-based)
+
+### Unix Philosophy
+- Do one thing and do it well
 - Programs should work together
-- Use **text** as a universal interface
+- Text is the universal interface
 
 ---
 
-## 2. Kernel vs Shell
+## Filesystem & Paths
 
-### Kernel
-- Core of the operating system
-- Manages hardware, CPU, memory, and processes
-
-### Shell
-- Interface between user and kernel
-- Executes user commands
-- Examples: bash, sh, zsh
-
----
-
-## 3. CLI vs GUI
-
-| CLI | GUI |
-|----|----|
-| Text-based | Graphical |
-| Faster | Slower |
-| Scriptable | Mouse-based |
-
----
-
-## 4. Linux Filesystem Hierarchy
-
+### Linux Filesystem Hierarchy
 ```
 /
-├── bin     # Essential binaries
+├── bin     # System binaries
 ├── home    # User directories
 ├── etc     # Configuration files
 ├── var     # Logs and variable data
@@ -52,80 +49,107 @@ Everything in Linux is treated as a file.
 
 ---
 
-## 5. Terminal Usage Basics
-- Commands are case-sensitive
-- Uses `/` for directory paths
-- `~` represents home directory
-
----
-
-## 6. Unix File System Concepts
-
-### Absolute vs Relative Paths
+### Paths
 
 **Absolute Path**
 ```bash
-/home/user/docs
+/home/user/file.txt
 ```
 
 **Relative Path**
 ```bash
-docs/file.txt
+../file.txt
 ```
 
+---
+
 ### Hidden Files
-Files starting with `.`
+- File names starting with `.`
+- Examples: `.git`, `.bashrc`
+
 ```bash
 ls -a
 ```
 
+---
+
 ### Inode Concept
-- Stores file metadata
+- Stores metadata (permissions, owner, size)
+- File name is not stored in inode
 - Each file has a unique inode number
+
 ```bash
 ls -i
 ```
 
 ---
 
-## 7. Basic Unix Commands
+## Basic Commands
+Copy and paste into terminal:
 
 ```bash
-pwd     # Show current directory
-ls      # List files
-cd      # Change directory
-mkdir   # Create directory
-rmdir   # Remove empty directory
-rm      # Remove file
-touch   # Create empty file
-cat     # Display file content
-less    # View file page by page
-man     # Manual/help
+pwd             # show current directory
+ls              # list files
+cd ..           # move back one directory
+mkdir demo      # create directory
+rmdir demo      # remove empty directory
+rm file.txt     # delete file
+rm -r demo      # delete directory recursively
+touch file.txt  # create empty file
+cat file.txt    # display file content
+less file.txt   # view file pagewise
+man ls          # open manual for ls
 ```
 
 ---
 
-## 8. Advanced Unix Commands
+## Advanced Commands
 
-### grep
+### grep — Search Text
 ```bash
-grep "error" file.txt
+grep "error" log.txt
 ```
 
-### find
+### find — Search Files
 ```bash
 find . -name "*.md"
 ```
 
 ### Permissions
 ```bash
+
+## chmod Permission Table (Numeric)
+
+### Permission Values
+- 4 = read (r)
+- 2 = write (w)
+- 1 = execute (x)
+
+### Common chmod Values
+
+| chmod | Owner | Group | Others | Use case |
+|------:|------|-------|--------|----------|
+| 777 | rwx | rwx | rwx | Full access (not recommended) |
+| 775 | rwx | rwx | r-x | Shared directories |
+| 755 | rwx | r-x | r-x | Executable files / scripts |
+| 744 | rwx | r-- | r-- | Owner full, others read |
+| 700 | rwx | --- | --- | Private directory/file |
+| 666 | rw- | rw- | rw- | Read/write file |
+| 644 | rw- | r-- | r-- | Normal file (most common) |
+| 600 | rw- | --- | --- | Private file |
+| 444 | r-- | r-- | r-- | Read-only file |
+
+### Example
+```bash
 chmod 755 script.sh
-chown user:group file.txt
+chmod 644 file.txt
+
+
 ```
 
-### Pipes and Redirection
+### Pipes & Redirection
 ```bash
-ls | grep md
+ls | grep txt
 echo "hello" > file.txt
 cat file.txt >> file2.txt
 ```
@@ -138,8 +162,10 @@ jobs
 
 ---
 
-## 9. Git Usage from Linux Terminal
-### Making a New Branch and Switching to It
+## Git from Terminal
+### Making a New Branch and Switching
+
+Example workflow executed from terminal:
 
 ```bash
 $ pwd
@@ -165,10 +191,16 @@ $ git branch
   master
 ```
 
+Explanation:
+- `git init` → creates repository
+- `git checkout -b f_b` → creates and switches branch
+- `git branch` → lists branches
+
 ---
 
-## ✅ Summary
-- Linux & Unix fundamentals
-- Filesystem and terminal usage
-- Essential and advanced commands
-- Git branch creation via terminal
+## Summary
+- UNIX fundamentals and philosophy
+- Filesystem structure and paths
+- Essential & advanced Linux commands
+- Git branching using terminal
+
