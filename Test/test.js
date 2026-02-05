@@ -9,3 +9,5 @@ test('fs write functions exist', () => {
   expect(typeof fs.writeFile).toBe('function');
   expect(typeof fs.writeFileSync).toBe('function');
 });
+
+
