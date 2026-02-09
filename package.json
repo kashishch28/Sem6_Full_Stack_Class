@@ -14,6 +14,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "type":"commonjs",
+  "description": "",
+  "Dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^5.2.1"
+  }
 }
 
