@@ -27,4 +27,4 @@ Helper script:
 ```bash
 ./Script/
 
-Contributions are welcome — add notes to `Notes.md`, examples in `examples/` and tests in `Test/`.
+Contributions are welcome — add notes to `Notes.md`, `note.txt`, examples in `examples/` and tests in `Test/`.
