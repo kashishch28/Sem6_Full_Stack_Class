@@ -1,10 +1,10 @@
-function add(a,b){
-    return a+b;
-}
+// function add(a,b){
+//     return a+b;
+// }
 
-add();
+// add();
 
-module.exports = add;
+// module.exports = add;
 //export default add;
 
 //if multiple functions are there then we can export them as an object like this
@@ -14,3 +14,14 @@ module.exports = add;
 //     multiply
 // }
 
+
+
+//calback
+function greet(name,callback){
+    console.log("Hello "+name);
+    callback();
+}
+function sayGoodbye(){
+    console.log("Goodbye");
+}
+greet("Kashish",sayGoodbye);

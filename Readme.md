@@ -25,6 +25,6 @@ npm Test
 Helper script:
 
 ```bash
-./Script/
+./Shell_script/
 
 Contributions are welcome — add notes to `Notes.md`, `note.txt`, examples in `examples/` and tests in `Test/`.
