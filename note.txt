@@ -1,32 +1,46 @@
 
-// npm start vs npm run?
-// npm start -> used to run the start script
-// npm run -> used to run any custom script defined in the scripts section
+***npm start vs npm run?
+-->npm start -> used to run the start script
+-->npm run -> used to run any custom script defined in the scripts section
 
 
-//package.json vs package-lock.json?
-// package.json -> contains metadata about the project and its dependencies
-// package-lock.json -> contains the exact versions of dependencies installed
+***package.json vs package-lock.json?
+-->package.json -> contains metadata about the project and its dependencies
+-->package-lock.json -> contains the exact versions of dependencies installed
 
-//what is metadata?
-// Metadata is data that provides information about other data. //
-// It helps to describe the structure, content, and context of the data.//
-//  In the context of package.json, metadata includes information such as the name of the project, version, description, author, license, and dependencies. //
-// This information is used by npm to manage the project and its dependencies effectively.
 
-//what is promise in js and why we need it in simple terms?
-// A promise in JavaScript is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value. 
-// // We need promises to handle asynchronous operations in a more manageable way, avoiding callback hell and making the code easier to read and maintain. //
-// Promises allow us to write asynchronous code that looks synchronous, making it easier to understand and work with.
 
-//what is async and sync in js?
-// Synchronous (sync) code is executed sequentially, meaning each operation must complete before the next one begins. 
-// Asynchronous (async) code, on the other hand, allows multiple operations to run concurrently, enabling the program to continue executing other tasks while waiting for an operation to complete. //
-// Async code is often used for tasks that take time to complete, such as network requests or file I/O, to improve performance and responsiveness.
+***what is metadata?
+-->Metadata is data that provides information about other data. 
+-->It helps to describe the structure, content, and context of the data.
+-->In the context of package.json, metadata includes information such as the name of the project, version, description, author, license, and dependencies.
+-->This information is used by npm to manage the project and its dependencies effectively.
 
-// what is callback function in js?
-// A callback function in JavaScript is a function that is passed as an argument to another function and is executed after a certain event or operation is completed. 
-// Callbacks are commonly used for handling asynchronous operations, such as reading files, making network requests, or responding to user interactions. //
+
+
+***what is promise in js and why we need it in simple terms?
+-->A promise in JavaScript is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+-->We need promises to handle asynchronous operations in a more manageable way, avoiding callback hell and making the code easier to read and maintain.
+
+-->Promises allow us to write asynchronous code that looks synchronous, making it easier to understand and work with.
+
+
+
+***what is async and sync in js?
+-->Synchronous (sync) code is executed sequentially, meaning each operation must complete before the next one begins. 
+
+-->Asynchronous (async) code, on the other hand, allows multiple operations to run concurrently, enabling the program to continue executing other tasks while waiting for an operation to complete. 
+
+-->Async code is often used for tasks that take time to complete, such as network requests or file I/O, to improve performance and responsiveness.
+
+***what is callback function in js?
+-->A callback function in JavaScript is a function that is passed as an argument to another function and is executed after a certain event or operation is completed. 
+-->Callbacks are commonly used for handling asynchronous operations, such as reading files, making network requests, or responding to user interactions. //
 // They allow us to define what should happen once the asynchronous task is finished.
 
 Path,os,process,global objects?
+
+
+***what is event loop in js? 
+-->event loop manages asynchronous operations non-blockingly, cycling through phases like timers, poll, check, using libuv for efficient I/O.
