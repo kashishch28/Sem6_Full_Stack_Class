@@ -1,7 +1,11 @@
-function add(a,b){
-//     return a+b;
-// }
+const { execSync } = require('child_process');
 
-// add();
+// test('examples run without error', () => {
+//   expect(() => execSync('node examples/app.js', { stdio: 'ignore' })).not.toThrow();
+// });
 
-// module.exports = add;
+// test('fs write functions exist', () => {
+//   const fs = require('fs');
+//   expect(typeof fs.writeFile).toBe('function');
+//   expect(typeof fs.writeFileSync).toBe('function');
+// });
